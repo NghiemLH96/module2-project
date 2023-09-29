@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Oswald:wght@600&family=Ultra&display=swap');
+$titleFont:'Black Ops One', cursive;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$maxWidth:1200px;
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #161C30;
+    width: 100%;
+    .header-container{
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        width:$maxWidth ;
+    }
+    .logo{
+        width: 150px;
+        height: 100px;
+        overflow: hidden;
+        object-fit: cover;
+        margin: 0px 30px;
+    }
+    .navbar{
+        list-style-type: none;
+        display: flex;
+        padding: 0px 40px;
+        column-gap: 40px;
+        flex: 8;
+        .nav{
+            text-decoration: none;
+            font-size: 18px;
+            font-family: $titleFont;
+            color: #FFFFFF;
+            &:hover{
+                color: rgb(255, 100, 100);
+            }
+        }
+    }
+    .user-box{
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        .userBox-btn{
+            background-color: #333333;
+            padding: 10px;
+            text-decoration: none;
+            color: #FFFFFF;
+            border-radius: 5px;
+            font-size: 18px;
+            font-family: $titleFont;
+            transition: all 0.5s;
+            &:hover{
+                transform: scale(1.05);
+                color:rgb(255, 100, 100) ;
+            }
+        }
+        .userAvatar{
+            border-radius: 50%;
+            border: black 1px solid;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #161C30;
+    .body-container{
+        width: 100%;
+        max-width: $maxWidth;
+        
+    }
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .footer-top{
+        width: 100%;
+        height: 50px;
+        &>button{
+            width: 100%;
+            height: 100%;
+            background-color: #222222;
+            transition: all 1s;
+            border: none;
+            color: #FFFFFF;
+            font-weight: 700;
+            cursor: pointer;
+            &:hover{
+                background-color: #474747;
+            }
+        }
+    }
+    .footer-middle{
+        background-color: #333333;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        font-size: 22px;
+        color: #FFFFFF;
+        border-bottom: 1px solid #474747;   
+        &>ul{
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+            line-height: 50px;
+            font-family: $titleFont;
+            &>.footer-links{
+                font-size: 20px;
+                text-decoration: none;
+                line-height: 35px;
+                color: #FFFFFF;
+                font-family: 'Times New Roman', Times, serif;
+                border-bottom: 1px solid transparent;
+                transition: all 1s;
+                &:hover{
+                    border-bottom: 1px solid #FFFFFF;
+                }
+            }
+        }
+        
+    }
+    .footer-bottom{
+        width: 100%;
+        background-color: #161C30;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 17px;
+        line-height: 30px;
+        padding: 30px 0px;
+    }
+}

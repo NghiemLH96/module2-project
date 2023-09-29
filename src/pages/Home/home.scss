@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Oswald:wght@600&family=Ultra&display=swap');
+$titleFont:'Black Ops One', cursive;
+
+.Home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0px;
+    row-gap: 50px;
+    .categories-title{
+        font-family: $titleFont;
+        font-size: 40px;
+        text-align: center;
+        padding: 20px;
+        color: #FFFFFF;
+    }
+    .categories{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 100%;
+        .categorie{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #FFFFFF;
+            font-size: 20px;
+            row-gap: 30px;  
+            font-family: $titleFont;
+            cursor: pointer;
+            text-decoration: none;
+            &>img{
+                transition: all 2s;
+                width: 250px;
+                height: 200px;
+                object-fit: contain;
+            }
+            &>.categorie-text{
+                color: #FFFFFF;
+                transition: all 2s;
+            }
+            &:hover{
+                &>img{
+                    scale: 1.1;
+                    overflow: hidden;
+                }
+                &>.categorie-text{
+                    font-size: 25px;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.banner-container{
+    width: 100%;
+    position: relative;
+    .banner-video{
+        display: inline-block;
+        width: 100vw;
+        height: 450px;
+        object-fit: cover;
+    }
+    .banner-title{
+        position: absolute;
+        width: 450px;
+        top: 150px;
+        left: 150px;
+        color: #FFFFFF;
+        font-family: $titleFont;
+        line-height: 50px;
+    }
+    .banner-explore{
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        line-height: 50px;
+        width: 150px;
+        height: 50px;
+        background-color: #00AECD;
+        font-family: $titleFont;
+        color: #000000;
+        &:hover{
+            color: #FFFFFF;
+            background-color: #000000;
+        }
+    }
+}

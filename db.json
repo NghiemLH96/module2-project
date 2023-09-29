@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": 175417346759.94754,
+      "username": "Nghiemle199",
+      "firstname": "Nghiem",
+      "lastname": "Le",
+      "email": "isaacisc01022014@gmail.com",
+      "passwords": "June1996",
+      "birthday": "1996-06-14",
+      "admin": false,
+      "cart": []
+    },
+    {
+      "id": 895008419873.0009,
+      "username": "Hoangnam2000",
+      "firstname": "Nam",
+      "lastname": "Hoang",
+      "email": "aoidjfaldfj@gmail.com",
+      "passwords": "June1996",
+      "birthday": "2000-07-13",
+      "admin": false,
+      "cart": []
+    }
+  ]
+}
