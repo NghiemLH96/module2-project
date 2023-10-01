@@ -5,9 +5,8 @@ $titleFont:'Black Ops One', cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 50px 0px;
-    row-gap: 50px;
     .categories-title{
         font-family: $titleFont;
         font-size: 40px;
@@ -52,37 +51,40 @@ $titleFont:'Black Ops One', cursive;
         }
     }
 }
-.banner-container{
-    width: 100%;
-    position: relative;
-    .banner-video{
-        display: inline-block;
-        width: 100vw;
-        height: 450px;
-        object-fit: cover;
-    }
-    .banner-title{
-        position: absolute;
-        width: 450px;
-        top: 150px;
-        left: 150px;
-        color: #FFFFFF;
-        font-family: $titleFont;
-        line-height: 50px;
-    }
-    .banner-explore{
-        display: inline-block;
-        text-align: center;
-        text-decoration: none;
-        line-height: 50px;
-        width: 150px;
-        height: 50px;
-        background-color: #00AECD;
-        font-family: $titleFont;
-        color: #000000;
-        &:hover{
+.homepage-container{
+    background-color: #161C30;
+    .banner-container{
+        width: 100%;
+        position: relative;
+        .banner-video{
+            display: inline-block;
+            width: 100vw;
+            height: 450px;
+            object-fit: cover;
+        }
+        .banner-title{
+            position: absolute;
+            width: 450px;
+            top: 150px;
+            left: 150px;
             color: #FFFFFF;
-            background-color: #000000;
+            font-family: $titleFont;
+            line-height: 50px;
+        }
+        .banner-explore{
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            line-height: 50px;
+            width: 150px;
+            height: 50px;
+            background-color: #00AECD;
+            font-family: $titleFont;
+            color: #000000;
+            &:hover{
+                color: #FFFFFF;
+                background-color: #000000;
+            }
         }
     }
 }

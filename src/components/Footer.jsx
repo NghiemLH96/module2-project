@@ -55,6 +55,7 @@ export default function Footer() {
         </div>
         <div>
           <p><sup>©</sup> 2023 Acer Inc.</p>
+          <i className="fa-brands fa-facebook"></i>
         </div>
       </div>
     </section>

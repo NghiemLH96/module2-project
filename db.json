@@ -1,24 +1,101 @@
 {
   "users": [
     {
-      "id": 175417346759.94754,
-      "username": "Nghiemle199",
+      "id": 325319706268.8367,
+      "username": "admin1996",
       "firstname": "Nghiem",
       "lastname": "Le",
-      "email": "isaacisc01022014@gmail.com",
-      "passwords": "June1996",
+      "email": "isaac01022014@gmail.com",
+      "passwords": "U2FsdGVkX19dWNOilDh3uRnCeh382Z/nhidDkg8q1SE=",
+      "birthday": "1996-06-14",
+      "admin": true,
+      "cart": []
+    },
+    {
+      "id": 1288017238886.5544,
+      "username": "hieunghiem96",
+      "firstname": "Nghiem",
+      "lastname": "Le",
+      "email": "hieunghiemle@gmail.com",
+      "passwords": "U2FsdGVkX1+UoODAtb9T/LfFEn16fANTtUhD7gTBpr8=",
       "birthday": "1996-06-14",
       "admin": false,
       "cart": []
     },
     {
-      "id": 895008419873.0009,
-      "username": "Hoangnam2000",
+      "id": 1260840593083.1948,
+      "username": "hoangnam202",
       "firstname": "Nam",
       "lastname": "Hoang",
-      "email": "aoidjfaldfj@gmail.com",
-      "passwords": "June1996",
-      "birthday": "2000-07-13",
+      "email": "hoangnam@gmail.com",
+      "passwords": "U2FsdGVkX1+CqNAb7QPG54HBhqd9pPYjGGruZKEeu8w=",
+      "birthday": "2002-12-06",
+      "admin": false,
+      "cart": []
+    },
+    {
+      "id": 877342457766.6619,
+      "username": "tuananh204",
+      "firstname": "Tuan",
+      "lastname": "Anh",
+      "email": "tuananh@gmail.com",
+      "passwords": "U2FsdGVkX19v9GbEqDmePmW9bpWlgm6uWI85qtP5YHI=",
+      "birthday": "1996-12-06",
+      "admin": false,
+      "cart": []
+    },
+    {
+      "id": 707089311334.4431,
+      "username": "halan2005",
+      "firstname": "Ha",
+      "lastname": "Lan",
+      "email": "halan@gmail.com",
+      "passwords": "U2FsdGVkX18JUchcOLyVOH1jVHGkBjzsejrAVVs8Ltg=",
+      "birthday": "1996-12-06",
+      "admin": false,
+      "cart": []
+    },
+    {
+      "id": 1291559014696.8186,
+      "username": "giaan216",
+      "firstname": "An",
+      "lastname": "Gia",
+      "email": "giaan@gmail.com",
+      "passwords": "U2FsdGVkX1/2DDRdtEExiH7Ru2F1y8gaioL0Lo0Y7f8=",
+      "birthday": "2016-12-06",
+      "admin": false,
+      "cart": []
+    },
+    {
+      "id": 1388520286526.8264,
+      "username": "giahy2015",
+      "firstname": "Hy",
+      "lastname": "Gia",
+      "email": "giahy@gmail.com",
+      "passwords": "U2FsdGVkX1/zeuFXC4DWmuW16fUSydVIp0ksbxObjHU=",
+      "birthday": "2015-06-14",
+      "admin": false,
+      "cart": []
+    },
+    {
+      "id": 310688961150.8579,
+      "username": "luumai64",
+      "firstname": "Mai",
+      "lastname": "Luu",
+      "email": "luumai@gmail.com",
+      "passwords": "U2FsdGVkX18OWPqGcJpwjwuKNRqyfuHqih5iOYrzwZc=",
+      "birthday": "1964-12-06",
+      "admin": false,
+      "cart": []
+    },
+    {
+      "id": 1144023460520.1648,
+      "username": "yenle1988",
+      "firstname": "Yen",
+      "lastname": "Le",
+      "email": "yenle@gmail.com",
+      "passwords": "U2FsdGVkX192/a9/d3H7f/gi7GGJ2YeNlnWxgbkTaHs=",
+      "birthday": "1996-12-06",
       "admin": false,
       "cart": []
     }

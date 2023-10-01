@@ -1,15 +1,38 @@
-import React , {useState} from 'react'
+import React from 'react'
 import logo from '../../images/logo.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { ExclamationCircleOutlined } from '@ant-design/icons';
+import { Button, Modal } from 'antd';
+import { useDispatch, useSelector } from 'react-redux';
+import { userAction } from '../store/slices/userList.reducer';
+
+
 
 export default function Header() {
-  const [login,setLogin] = useState(localStorage.getItem("token"))
+const loginUser = useSelector( store => store.usersStore.user)
 
-  function logout(){
-    if (confirm("Do you want to logout?")) {
-      setLogin(localStorage.removeItem("token"))
-    }
-  }
+const navigate = useNavigate()
+const dispatch = useDispatch()
+
+const { confirm } = Modal;
+const destroyAll = () => {
+  Modal.destroyAll();
+};
+const showConfirm = () => {
+      confirm({
+        icon: <ExclamationCircleOutlined />,
+        content: <Button onClick={destroyAll()}>Are you sure to quit?</Button>,
+        onOk() {
+          localStorage.removeItem("token")
+          dispatch(userAction.removeUser())
+        },
+        onCancel() {
+          return;
+        },
+      });
+;
+};
+
   return (
     <header>
         <div className='header-container'>
@@ -20,17 +43,14 @@ export default function Header() {
                 <Link className='nav' to={"/contact"}>Contact</Link>
                 <Link className='nav' to={"/about"}>About</Link>
             </ul>
-            <div className='user-box'>
-                <Link className='userBox-btn' to={"/register"}>Register</Link>
-                { login ? <span onClick={()=>{logout()}} className='userBox-btn'>Logout</span> : <Link className='userBox-btn' to={"/login"}>Login</Link>}
-                
-                <img className='userAvatar' src="" alt="" />
-                <span className='hello-word'>Hi, Nghiem</span>
+            <div className='user-box'>      
+                { !loginUser && <Link className='userBox-btn' to={"/register"}>Register</Link>}
+                { loginUser && (loginUser.admin && <span onClick={()=>{navigate("/admin")}} className='userBox-btn'>Admin</span>)}
+                { loginUser ? <span onClick={()=>{showConfirm()}} className='userBox-btn'>Logout</span> : <Link className='userBox-btn' to={"/login"}>Login</Link>}
+                { loginUser && <img className='userAvatar' src={loginUser.avatar} alt="" />}
+                { loginUser && <span className='hello-word'>Hi,{loginUser.firstname}</span>}
             </div>
         </div>
-        
-        {/* <Link to={"/register"}>Register</Link>
-        <Link to={"/login"}>Login</Link> */}
     </header>
   )
 }

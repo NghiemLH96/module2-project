@@ -1,50 +1,99 @@
-import React,{useEffect , useState , useRef} from 'react'
+import React from 'react'
 import './register.scss'
-import axios from 'axios'
+import { api } from '../../service'
+import crypto from '../../service/crypto'
+import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { Button, Modal, Space } from 'antd';
 
 export default function Register() {
-  const [usersList,setUsersList] = useState([])
-  const errUserExist = useRef()
-
-  useEffect(()=>{
-    axios.get("http://localhost:3000/users")
+  const navigate = useNavigate()
+  if (localStorage.getItem("token")) {
+    api.usersApi.findByUsername(crypto.verifyToken(localStorage.getItem("token"),import.meta.env.VITE_PRIVATE_KEY).username)
     .then(res=>{
-      setUsersList(res.data)
+      if (res.data.length > 0) {
+        navigate("/")
+      }
     })
-  },[usersList])
+  }
 
+  const enrollSuccess = () => {
+    Modal.success({
+      content: 'Sign up success !',
+      onOk(){
+        navigate("/login")
+      }
+    });
+  };
 
-  function handleAddAccount(e) {
+  let validate = true
+  async function validateInfo(e) {
     e.preventDefault();
+    validate=true
     const newUser ={
       id:Math.random()*Date.now(),
       username:e.target.querySelector(".user-name").value,
       firstname:e.target.querySelector(".first-name").value,
       lastname:e.target.querySelector(".last-name").value,
       email:e.target.querySelector(".email").value,
-      passwords:e.target.querySelector(".passwords").value,
+      passwords:crypto.createToken(e.target.querySelector(".passwords").value),
       birthday:e.target.querySelector(".birthday").value,
       admin:false,
       cart:[],
     }
+    console.log(newUser);
 
-    //validate infor
-    usersList.map(user=>{
-      //validate username
-        axios.post("http://localhost:3000/users",newUser)
-    })
-    e.target.querySelector(".first-name").value = "";
-    e.target.querySelector(".user-name").value = "";
-    e.target.querySelector(".last-name").value ="";
-    e.target.querySelector(".email").value="";
-    e.target.querySelector(".passwords").value="";
-    e.target.querySelector(".birthday").value="";
+    if (!newUser.firstname) {
+      alert("firstname can't be empty")
+    }
+
+    if (!newUser.lastname) {
+      alert("lastname can't be empty")
+    }
+
+    let findUserByName = await api.usersApi.findByUsername(newUser.username)
+    if(findUserByName.data.length > 0 ){
+      alert("account was existed!")
+      validate=false
+      console.log(validate);
+    }
+    
+    if (newUser.username.split("").length<8) {
+      alert("account should have more than 8 letters")
+      validate=false
+    }
+
+    let findUserByEmail = await api.usersApi.findByEmail(newUser.email)
+    if (findUserByEmail.data.length > 0) {
+      alert("email was existed!")
+      validate=false
+    }
+
+    let passwordsValidate = e.target.querySelector(".passwords").value.split("").length;
+    if (passwordsValidate<8) {
+      alert("passwords should have more than 8 letters")
+      validate=false
+    }
+
+    if (!newUser.birthday) {
+      alert("birthday is required!")
+      validate=false
+    }
+    
+    if(validate){
+      await api.usersApi.register(newUser)
+      enrollSuccess()
+
+    }
   }
+
+
+
 
   return (
     <div className='register-container'>
         <div className='form-container'>
-          <form className='enroll-form' onSubmit={(e)=>{handleAddAccount(e)}}>
+          <form className='enroll-form' onSubmit={(e)=>{validateInfo(e)}}>
             <h1>Register</h1>
             <div className='enroll-namebox'>
               <div>
@@ -73,11 +122,12 @@ export default function Register() {
               <input id='email' className='email' type="text" placeholder='Enter your email'/>
             </div>
             <div className='enroll-detail'>
-            <p ref={errUserExist} className='err-msg'>Username was existed</p>
+            <p className='err-msg'>Username was existed</p>
             <p className='err-msg'>password should be more than 8 letter</p>
             <p className='err-msg'>Email was existed</p>
             <p className='err-msg'>Email format not correct</p>
               <button>Create Account</button>
+              <Link to={"/login"}>Sign in</Link>
             </div>
           </form>
         </div>

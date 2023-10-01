@@ -59,6 +59,15 @@ $titleFont:'Black Ops One', cursive;
                     transform: scale(1.05);
                 }
             }
+            .navigateLink{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                &:hover{
+                    color: red;
+                    text-decoration: underline;
+                }
+            }
         }
         .login-namebox{
             display: flex;
