@@ -12,10 +12,6 @@ export default function Home() {
     <div className='Home'>
       <Header/>
       <div className='home-container'>
-        {/* <Routes>
-              
-
-        </Routes> */}
         <Outlet/>
       </div>
       <Footer/>
