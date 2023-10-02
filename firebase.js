@@ -4,13 +4,13 @@ import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 //congif firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyCyxJ5Cb6C_dbZX9soXvsrhZs1sIRkBSdY",
-    authDomain: "module2-project-53e34.firebaseapp.com",
-    projectId: "module2-project-53e34",
-    storageBucket: "module2-project-53e34.appspot.com",
-    messagingSenderId: "440222211931",
-    appId: "1:440222211931:web:78479d39f4a7b529d6447e",
-    measurementId: "G-SG6VMSQTZQ"
+    apiKey: "AIzaSyBy7wXz8RIRCYPM3uQiT1ugrr58SUeWmx4",
+    authDomain: "module2-productsimg.firebaseapp.com",
+    projectId: "module2-productsimg",
+    storageBucket: "module2-productsimg.appspot.com",
+    messagingSenderId: "594914427614",
+    appId: "1:594914427614:web:7deec7e5703baf83f1b84f",
+    measurementId: "G-5Q0G7JL5G1"
   };
 
 const app = initializeApp(firebaseConfig);

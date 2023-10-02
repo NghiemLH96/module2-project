@@ -19,13 +19,26 @@ $titleFont:'Black Ops One', cursive;
         &>img{
             width: 250px;
             height: 250px;
+            object-fit: cover;
         }
         &>ul{
             display: flex;
             flex-direction: column;
             row-gap: 10px;
             list-style-type: none;
-            font-size: 18px;
+            font-size: 20px;
+            .adminInfo-btn{
+                height: 30px;
+                background-color: #5f5f5f;
+                font-family: $titleFont;
+                color: #d9d0d7;
+                border:none;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover{
+                    color: rgb(255, 65, 65);
+                }
+            }
         }
     }
 }

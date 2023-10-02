@@ -6,8 +6,6 @@ import { Outlet } from 'react-router-dom'
 
 export default function Admin() {
 
-
-
   return (
     <div className='admin-container'>
         <Admin_header/>

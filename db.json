@@ -8,6 +8,7 @@
       "email": "isaac01022014@gmail.com",
       "passwords": "U2FsdGVkX19dWNOilDh3uRnCeh382Z/nhidDkg8q1SE=",
       "birthday": "1996-06-14",
+      "avatar": "https://firebasestorage.googleapis.com/v0/b/module2-project-53e34.appspot.com/o/users-avatar%2FIL.jpg?alt=media&token=4d9c2a5f-e1f2-495c-8c22-415a993c75ba&_gl=1*yp9xgz*_ga*NDg1NTQxNjU1LjE2OTU4MTYxMTc.*_ga_CW55HF8NVT*MTY5NjIwNzk0OS42LjEuMTY5NjIwODE1OS4zMS4wLjA.",
       "admin": true,
       "cart": []
     },
@@ -98,6 +99,38 @@
       "birthday": "1996-12-06",
       "admin": false,
       "cart": []
+    }
+  ],
+  "products": [
+    {
+      "id": 876600147599.2561,
+      "product_name": "item1",
+      "product_price": "123123",
+      "product_category": "Desktop",
+      "product_brand": "Predator",
+      "product_status": "true",
+      "product_inventory": "99",
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F766110734935.5999.jpeg?alt=media&token=672afd4f-7fae-46c4-ac94-f8c3b54c0103"
+    },
+    {
+      "id": 50519244909.41804,
+      "product_name": "item2",
+      "product_price": "25000",
+      "product_category": "Laptop",
+      "product_brand": "ASUS TUF",
+      "product_status": "true",
+      "product_inventory": "89",
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1363619649069.0918.jpeg?alt=media&token=e14b7aab-30f0-4859-bb5c-ca8979f7a1e2"
+    },
+    {
+      "id": 350290186713.8842,
+      "product_name": "item3",
+      "product_price": "26000",
+      "product_category": "Projector",
+      "product_brand": "ALIENWARE",
+      "product_status": "false",
+      "product_inventory": "78",
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F226297848967.70895.png?alt=media&token=05a690b7-b880-4d69-8c07-a7ab252379ba"
     }
   ]
 }

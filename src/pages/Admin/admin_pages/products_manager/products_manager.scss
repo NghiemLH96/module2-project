@@ -7,6 +7,7 @@ $titleFont:'Black Ops One', cursive;
     padding: 50px;
     width: 100%;
     max-width: 1200px;
+    row-gap: 10px;
     .page_title{
         font-size: 40px;
         font-family: $titleFont;
@@ -23,6 +24,21 @@ $titleFont:'Black Ops One', cursive;
     }
     &>table{
         border-collapse: collapse;
+        min-width: 1000px;
+        width: 100%;
+        &>thead{
+            height: 30px;
+        }
+        &>tbody{
+            text-align: center;
+            height: 100px;
+            &>tr>td{
+                width: 100px;
+                &>img{
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 
@@ -38,13 +54,15 @@ $titleFont:'Black Ops One', cursive;
     background-color: rgb(105, 105, 105,.3);
     .addProduct_frame{
         width: 400px;
-        height: 300px;
+        height: auto;
+        padding: 40px;
         background-color: #FFFFFF;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         row-gap: 20px ;
+        border-radius: 20px;
         &>h2{
             text-align: center;
             font-family: $titleFont;
@@ -58,9 +76,35 @@ $titleFont:'Black Ops One', cursive;
             .addProduct_info{
                 &>label{
                     display: inline-block;
-                    min-width: 100px;
+                    min-width: 110px;
+                }
+                &>input{
+                    min-width: 200px;
+                    padding: 0px 5px;
                 }
                 
+            }
+            .addProduct_btnBox{
+                display: flex;
+                justify-content: center;
+                column-gap: 10px;
+                &>button{
+                    width: 80px;
+                    height: 30px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-family: $titleFont;
+                    &:hover{
+                        color: red;
+                    }
+                }
+                .action_btn{
+                    background-color:rgb(105, 105, 255) ;
+                }
+                .cancel_btn{
+                    background-color: rgb(255, 127, 127);
+                }
             }
         } 
     }
