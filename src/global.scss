@@ -71,12 +71,32 @@ header{
             width: 40px;
             height: 40px;
             object-fit: cover;
+            cursor: pointer;
         }
         .hello-word{
             color: #FFFFFF;
             font-family: $titleFont;
             font-size: 18px;
         }
+        .cartBox{
+            position: relative;
+            .cart_icon{
+                color: #FFFFFF;
+                font-size: 30px;
+            }
+            .cart_quantity{
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                text-align: center;
+                line-height: 15px;
+                background-color: red;
+                color: #FFFFFF;
+            }
+        } 
     }
 }
 

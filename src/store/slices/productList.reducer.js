@@ -11,6 +11,12 @@ const productsSlice = createSlice({
                 ...state,
                 data:action.payload
             }
+        },
+        deleteProduct:(state,aciton)=>{
+            return {
+                ...state,
+                data: state.data.filter(item => item.id != aciton.payload)
+            }
         }
     }
 })

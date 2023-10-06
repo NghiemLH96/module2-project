@@ -2,135 +2,745 @@
   "users": [
     {
       "id": 325319706268.8367,
-      "username": "admin1996",
+      "username": "admin199696",
       "firstname": "Nghiem",
       "lastname": "Le",
       "email": "isaac01022014@gmail.com",
-      "passwords": "U2FsdGVkX19dWNOilDh3uRnCeh382Z/nhidDkg8q1SE=",
+      "passwords": "U2FsdGVkX1/92t2wyoGh+BoY6kUlJVzNrV3s0A95PnA=",
       "birthday": "1996-06-14",
       "avatar": "https://firebasestorage.googleapis.com/v0/b/module2-project-53e34.appspot.com/o/users-avatar%2FIL.jpg?alt=media&token=4d9c2a5f-e1f2-495c-8c22-415a993c75ba&_gl=1*yp9xgz*_ga*NDg1NTQxNjU1LjE2OTU4MTYxMTc.*_ga_CW55HF8NVT*MTY5NjIwNzk0OS42LjEuMTY5NjIwODE1OS4zMS4wLjA.",
       "admin": true,
+      "active": true,
+      "receipt": [
+        {
+          "receiptId": 103783909396.3985,
+          "buyerName": "admin199696",
+          "product": [
+            {
+              "id": 930507745325.2759,
+              "product_name": "PC Dell Alienware Aurora R13 70297322",
+              "product_price": "95490000",
+              "product_category": "desktops",
+              "product_brand": "alienware",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 2,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1135859102840.7334.webp?alt=media&token=3367e42f-cac9-4981-bebb-facd505df1c3"
+            },
+            {
+              "id": 1101928175931.2734,
+              "product_name": "Case Gigabyte Aorus C700 Glass Full Tower (GB-AC700G)",
+              "product_price": "9199000",
+              "product_category": "desktops",
+              "product_brand": "gigabyte-AORUS",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F983091526311.7906.webp?alt=media&token=96f7645e-96c1-407f-8e20-807ae306372b"
+            }
+          ]
+        },
+        {
+          "receiptId": 443987319076.435,
+          "buyerName": "admin199696",
+          "product": [
+            {
+              "id": 1101928175931.2734,
+              "product_name": "Case Gigabyte Aorus C700 Glass Full Tower (GB-AC700G)",
+              "product_price": "9199000",
+              "product_category": "desktops",
+              "product_brand": "gigabyte-AORUS",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F983091526311.7906.webp?alt=media&token=96f7645e-96c1-407f-8e20-807ae306372b"
+            }
+          ]
+        },
+        {
+          "receiptId": 623705665122.7341,
+          "buyerName": "admin199696",
+          "product": [
+            {
+              "id": 930507745325.2759,
+              "product_name": "PC Dell Alienware Aurora R13 70297322",
+              "product_price": "95490000",
+              "product_category": "desktops",
+              "product_brand": "alienware",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1135859102840.7334.webp?alt=media&token=3367e42f-cac9-4981-bebb-facd505df1c3"
+            }
+          ]
+        },
+        {
+          "receiptId": 1591251116590.6104,
+          "buyerName": "admin199696",
+          "product": [
+            {
+              "id": 930507745325.2759,
+              "product_name": "PC Dell Alienware Aurora R13 70297322",
+              "product_price": "95490000",
+              "product_category": "desktops",
+              "product_brand": "alienware",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1135859102840.7334.webp?alt=media&token=3367e42f-cac9-4981-bebb-facd505df1c3"
+            },
+            {
+              "id": 1101928175931.2734,
+              "product_name": "Case Gigabyte Aorus C700 Glass Full Tower (GB-AC700G)",
+              "product_price": "9199000",
+              "product_category": "desktops",
+              "product_brand": "gigabyte-AORUS",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F983091526311.7906.webp?alt=media&token=96f7645e-96c1-407f-8e20-807ae306372b"
+            }
+          ]
+        },
+        {
+          "receiptId": 1487873358809.3303,
+          "buyerName": "admin199696",
+          "product": [
+            {
+              "id": 31170217122.41812,
+              "product_name": "Laptop ACER Predator Helios 16",
+              "product_price": "117790000",
+              "product_category": "laptops",
+              "product_brand": "predator",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1304313218152.6404.webp?alt=media&token=8cbac273-5139-4589-90c6-85c7f4eadae4"
+            },
+            {
+              "id": 861781433221.2014,
+              "product_name": "Laptop ACER Predator Helios Neo",
+              "product_price": "37990000",
+              "product_category": "laptops",
+              "product_brand": "predator",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F873340475550.3306.webp?alt=media&token=0ec9904c-77c2-45b3-ab6a-ca0c816792c9"
+            }
+          ]
+        },
+        {
+          "receiptId": 1188926089003.268,
+          "buyerName": "admin199696",
+          "product": [
+            {
+              "id": 723664212142.364,
+              "product_name": "Laptop ACER Predator Helios 300",
+              "product_price": "57290000",
+              "product_category": "laptops",
+              "product_brand": "predator",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F434824451318.95966.webp?alt=media&token=d596e942-8ebf-49d0-bb65-9984525ed6d5"
+            },
+            {
+              "id": 198411819516.3283,
+              "product_name": "Laptop ASUS TUF Gaming FX507ZC-HN124W",
+              "product_price": "24790000",
+              "product_category": "laptops",
+              "product_brand": "asus-tuf",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F926555481010.718.webp?alt=media&token=30b62bbe-8530-4d57-b569-7bb8b7044b79"
+            }
+          ]
+        },
+        {
+          "receiptId": 1096994373757.518,
+          "buyerName": "admin199696",
+          "product": [
+            {
+              "id": 31170217122.41812,
+              "product_name": "Laptop ACER Predator Helios 16",
+              "product_price": "117790000",
+              "product_category": "laptops",
+              "product_brand": "predator",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1304313218152.6404.webp?alt=media&token=8cbac273-5139-4589-90c6-85c7f4eadae4"
+            }
+          ]
+        },
+        {
+          "receiptId": 356549957379.0719,
+          "buyerName": "admin199696",
+          "product": [
+            {
+              "id": 31170217122.41812,
+              "product_name": "Laptop ACER Predator Helios 16",
+              "product_price": "117790000",
+              "product_category": "laptops",
+              "product_brand": "predator",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1304313218152.6404.webp?alt=media&token=8cbac273-5139-4589-90c6-85c7f4eadae4"
+            },
+            {
+              "id": 861781433221.2014,
+              "product_name": "Laptop ACER Predator Helios Neo",
+              "product_price": "37990000",
+              "product_category": "laptops",
+              "product_brand": "predator",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F873340475550.3306.webp?alt=media&token=0ec9904c-77c2-45b3-ab6a-ca0c816792c9"
+            }
+          ]
+        },
+        {
+          "receiptId": 593545129679.8604,
+          "buyerName": "admin199696",
+          "product": [
+            {
+              "id": 31170217122.41812,
+              "product_name": "Laptop ACER Predator Helios 16",
+              "product_price": "117790000",
+              "product_category": "laptops",
+              "product_brand": "predator",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1304313218152.6404.webp?alt=media&token=8cbac273-5139-4589-90c6-85c7f4eadae4"
+            },
+            {
+              "id": 861781433221.2014,
+              "product_name": "Laptop ACER Predator Helios Neo",
+              "product_price": "37990000",
+              "product_category": "laptops",
+              "product_brand": "predator",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F873340475550.3306.webp?alt=media&token=0ec9904c-77c2-45b3-ab6a-ca0c816792c9"
+            }
+          ]
+        },
+        {
+          "receiptId": 981548174494.4154,
+          "buyerName": "admin199696",
+          "product": [
+            {
+              "id": 930507745325.2759,
+              "product_name": "PC Dell Alienware Aurora R13 70297322",
+              "product_price": "95490000",
+              "product_category": "desktops",
+              "product_brand": "alienware",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 2,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1135859102840.7334.webp?alt=media&token=3367e42f-cac9-4981-bebb-facd505df1c3"
+            }
+          ]
+        },
+        {
+          "receiptId": 94758036317.89034,
+          "buyerName": "admin199696",
+          "product": [
+            {
+              "id": 1101928175931.2734,
+              "product_name": "Case Gigabyte Aorus C700 Glass Full Tower (GB-AC700G)",
+              "product_price": "9199000",
+              "product_category": "desktops",
+              "product_brand": "gigabyte-AORUS",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F983091526311.7906.webp?alt=media&token=96f7645e-96c1-407f-8e20-807ae306372b"
+            }
+          ]
+        },
+        {
+          "receiptId": 1160231582762.3496,
+          "buyerName": "admin199696",
+          "product": [
+            {
+              "id": 930507745325.2759,
+              "product_name": "PC Dell Alienware Aurora R13 70297322",
+              "product_price": "95490000",
+              "product_category": "desktops",
+              "product_brand": "alienware",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 2,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1135859102840.7334.webp?alt=media&token=3367e42f-cac9-4981-bebb-facd505df1c3"
+            },
+            {
+              "id": 1101928175931.2734,
+              "product_name": "Case Gigabyte Aorus C700 Glass Full Tower (GB-AC700G)",
+              "product_price": "9199000",
+              "product_category": "desktops",
+              "product_brand": "gigabyte-AORUS",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F983091526311.7906.webp?alt=media&token=96f7645e-96c1-407f-8e20-807ae306372b"
+            }
+          ]
+        }
+      ],
       "cart": []
     },
     {
-      "id": 1288017238886.5544,
-      "username": "hieunghiem96",
-      "firstname": "Nghiem",
-      "lastname": "Le",
-      "email": "hieunghiemle@gmail.com",
-      "passwords": "U2FsdGVkX1+UoODAtb9T/LfFEn16fANTtUhD7gTBpr8=",
-      "birthday": "1996-06-14",
-      "admin": false,
-      "cart": []
-    },
-    {
-      "id": 1260840593083.1948,
-      "username": "hoangnam202",
+      "id": 114875580245.27519,
+      "username": "member2000",
       "firstname": "Nam",
       "lastname": "Hoang",
       "email": "hoangnam@gmail.com",
-      "passwords": "U2FsdGVkX1+CqNAb7QPG54HBhqd9pPYjGGruZKEeu8w=",
-      "birthday": "2002-12-06",
+      "passwords": "U2FsdGVkX190hXu/MjhiRHJ0MByrNGzGVtuc/7yAlxg=",
+      "birthday": "2000-02-01",
+      "active": true,
       "admin": false,
-      "cart": []
-    },
-    {
-      "id": 877342457766.6619,
-      "username": "tuananh204",
-      "firstname": "Tuan",
-      "lastname": "Anh",
-      "email": "tuananh@gmail.com",
-      "passwords": "U2FsdGVkX19v9GbEqDmePmW9bpWlgm6uWI85qtP5YHI=",
-      "birthday": "1996-12-06",
-      "admin": false,
-      "cart": []
-    },
-    {
-      "id": 707089311334.4431,
-      "username": "halan2005",
-      "firstname": "Ha",
-      "lastname": "Lan",
-      "email": "halan@gmail.com",
-      "passwords": "U2FsdGVkX18JUchcOLyVOH1jVHGkBjzsejrAVVs8Ltg=",
-      "birthday": "1996-12-06",
-      "admin": false,
-      "cart": []
-    },
-    {
-      "id": 1291559014696.8186,
-      "username": "giaan216",
-      "firstname": "An",
-      "lastname": "Gia",
-      "email": "giaan@gmail.com",
-      "passwords": "U2FsdGVkX1/2DDRdtEExiH7Ru2F1y8gaioL0Lo0Y7f8=",
-      "birthday": "2016-12-06",
-      "admin": false,
-      "cart": []
-    },
-    {
-      "id": 1388520286526.8264,
-      "username": "giahy2015",
-      "firstname": "Hy",
-      "lastname": "Gia",
-      "email": "giahy@gmail.com",
-      "passwords": "U2FsdGVkX1/zeuFXC4DWmuW16fUSydVIp0ksbxObjHU=",
-      "birthday": "2015-06-14",
-      "admin": false,
-      "cart": []
-    },
-    {
-      "id": 310688961150.8579,
-      "username": "luumai64",
-      "firstname": "Mai",
-      "lastname": "Luu",
-      "email": "luumai@gmail.com",
-      "passwords": "U2FsdGVkX18OWPqGcJpwjwuKNRqyfuHqih5iOYrzwZc=",
-      "birthday": "1964-12-06",
-      "admin": false,
-      "cart": []
-    },
-    {
-      "id": 1144023460520.1648,
-      "username": "yenle1988",
-      "firstname": "Yen",
-      "lastname": "Le",
-      "email": "yenle@gmail.com",
-      "passwords": "U2FsdGVkX192/a9/d3H7f/gi7GGJ2YeNlnWxgbkTaHs=",
-      "birthday": "1996-12-06",
-      "admin": false,
-      "cart": []
+      "avatar": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/user-avatar%2F1459446862221.4526.jpeg?alt=media&token=5c946821-235f-4d06-a6d6-d2b49022b392",
+      "cart": [],
+      "receipt": [
+        {
+          "receiptId": 954188662603.5901,
+          "buyerName": "member2000",
+          "product": [
+            {
+              "id": 1443459432251.4788,
+              "product_name": "Laptop ASUS ROG Zephyrus G16 GU603VU-N3898W",
+              "product_price": "41590000",
+              "product_category": "laptops",
+              "product_brand": "asus-rog",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F607694721221.7119.webp?alt=media&token=09c96896-cd62-4b32-9144-e99b3007414b"
+            },
+            {
+              "id": 1344380969312.3013,
+              "product_name": "Laptop ASUS ROG Zephyrus G14 GA401QC-K2199W",
+              "product_price": "24690000",
+              "product_category": "laptops",
+              "product_brand": "asus-rog",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F69952813701.00496.webp?alt=media&token=5e3c5ed3-dee3-4e5f-a643-e9297a15c04e"
+            },
+            {
+              "id": 897618994314.9769,
+              "product_name": "Laptop ASUS Gaming ROG Strix G513IE-HN246W",
+              "product_price": "20490000",
+              "product_category": "laptops",
+              "product_brand": "asus-rog",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1059400626963.1421.webp?alt=media&token=794cd23b-d7f0-4baf-8f5f-c868dbc0ce67"
+            }
+          ]
+        },
+        {
+          "receiptId": 704032112651.4565,
+          "buyerName": "member2000",
+          "product": [
+            {
+              "id": 861781433221.2014,
+              "product_name": "Laptop ACER Predator Helios Neo",
+              "product_price": "37990000",
+              "product_category": "laptops",
+              "product_brand": "predator",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 1,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F873340475550.3306.webp?alt=media&token=0ec9904c-77c2-45b3-ab6a-ca0c816792c9"
+            }
+          ]
+        }
+      ]
     }
   ],
   "products": [
     {
-      "id": 876600147599.2561,
-      "product_name": "item1",
-      "product_price": "123123",
-      "product_category": "Desktop",
-      "product_brand": "Predator",
+      "id": 31170217122.41812,
+      "product_name": "Laptop ACER Predator Helios 16",
+      "product_price": "117790000",
+      "product_category": "laptops",
+      "product_brand": "predator",
       "product_status": "true",
       "product_inventory": "99",
-      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F766110734935.5999.jpeg?alt=media&token=672afd4f-7fae-46c4-ac94-f8c3b54c0103"
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1304313218152.6404.webp?alt=media&token=8cbac273-5139-4589-90c6-85c7f4eadae4"
     },
     {
-      "id": 50519244909.41804,
-      "product_name": "item2",
-      "product_price": "25000",
-      "product_category": "Laptop",
-      "product_brand": "ASUS TUF",
+      "id": 861781433221.2014,
+      "product_name": "Laptop ACER Predator Helios Neo",
+      "product_price": "37990000",
+      "product_category": "laptops",
+      "product_brand": "predator",
       "product_status": "true",
-      "product_inventory": "89",
-      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1363619649069.0918.jpeg?alt=media&token=e14b7aab-30f0-4859-bb5c-ca8979f7a1e2"
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F873340475550.3306.webp?alt=media&token=0ec9904c-77c2-45b3-ab6a-ca0c816792c9"
     },
     {
-      "id": 350290186713.8842,
-      "product_name": "item3",
-      "product_price": "26000",
-      "product_category": "Projector",
-      "product_brand": "ALIENWARE",
-      "product_status": "false",
-      "product_inventory": "78",
-      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F226297848967.70895.png?alt=media&token=05a690b7-b880-4d69-8c07-a7ab252379ba"
+      "id": 848338100463.1366,
+      "product_name": "Laptop ACER Predator Triton 300",
+      "product_price": "36990000",
+      "product_category": "laptops",
+      "product_brand": "predator",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F469384470461.7157.webp?alt=media&token=79ed1f1c-7011-43ea-8986-641124ffe6ef"
+    },
+    {
+      "id": 723664212142.364,
+      "product_name": "Laptop ACER Predator Helios 300",
+      "product_price": "57290000",
+      "product_category": "laptops",
+      "product_brand": "predator",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F434824451318.95966.webp?alt=media&token=d596e942-8ebf-49d0-bb65-9984525ed6d5"
+    },
+    {
+      "id": 309117429331.8585,
+      "product_name": "Predator Headphone",
+      "product_price": "1230000",
+      "product_category": "accessories",
+      "product_brand": "predator",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F922914991015.1548.webp?alt=media&token=259c4424-fe32-4acc-a991-aaa145bcaf21"
+    },
+    {
+      "id": 39352751337.54694,
+      "product_name": "Wireless Gaming Mouse Predator Cestus 350",
+      "product_price": "15000000",
+      "product_category": "accessories",
+      "product_brand": "predator",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F789559475002.4856.webp?alt=media&token=6dca2242-d4a3-45d8-93c7-8ab6fb534774"
+    },
+    {
+      "id": 608130643239.2708,
+      "product_name": "Premium Gaming Keyboard PREDATOR AETHON 700",
+      "product_price": "3000000",
+      "product_category": "accessories",
+      "product_brand": "predator",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F914621825078.5927.webp?alt=media&token=a2a497ff-c88a-4b0e-bf07-1b09ef686bf5"
+    },
+    {
+      "id": 508367835782.51117,
+      "product_name": "RAM desktop KINGSTON HyperX Predator RGB 32GB DDR4 3200MHz (2 x 16GB) DDR4 3200MHz",
+      "product_price": "5379000",
+      "product_category": "accessories",
+      "product_brand": "predator",
+      "product_status": "true",
+      "product_inventory": "99",
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F245042998528.7948.webp?alt=media&token=80cf250a-25d7-4e15-bb4b-1616c373fc41"
+    },
+    {
+      "id": 190594354981.12253,
+      "product_name": "AM desktop KINGSTON HyperX Predator RGB 64GB DDR4 3200MHz (2 x 32GB) DDR4 3200MHz",
+      "product_price": "10749000",
+      "product_category": "accessories",
+      "product_brand": "predator",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F456463552948.47797.webp?alt=media&token=c5bdd092-d6a5-407a-aa61-4cd7ef925125"
+    },
+    {
+      "id": 880942315344.7898,
+      "product_name": "Acer Predator Cestus 300 Gaming Mouse",
+      "product_price": "1000000",
+      "product_category": "accessories",
+      "product_brand": "predator",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F861992257955.0654.webp?alt=media&token=6d2a0755-5923-4783-96e6-5830ddf0e180"
+    },
+    {
+      "id": 198411819516.3283,
+      "product_name": "Laptop ASUS TUF Gaming FX507ZC-HN124W",
+      "product_price": "24790000",
+      "product_category": "laptops",
+      "product_brand": "asus-tuf",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F926555481010.718.webp?alt=media&token=30b62bbe-8530-4d57-b569-7bb8b7044b79"
+    },
+    {
+      "id": 620380006092.8906,
+      "product_name": "Laptop ASUS TUF Gaming FX506HC-HN144W",
+      "product_price": "19490000",
+      "product_category": "laptops",
+      "product_brand": "asus-tuf",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1316699034256.7524.webp?alt=media&token=7635cf67-cc70-41f5-8dfb-b0b6d167bb56"
+    },
+    {
+      "id": 470522633757.1615,
+      "product_name": "Laptop ASUS TUF Gaming FX517ZC-HN077W",
+      "product_price": "23990000",
+      "product_category": "laptops",
+      "product_brand": "asus-tuf",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F978291550802.81.webp?alt=media&token=cb777d66-cf90-41dd-a9b6-6ddb255916ea"
+    },
+    {
+      "id": 1540028932591.5654,
+      "product_name": "Laptop ASUS TUF Gaming FA507RM-HN018W",
+      "product_price": "31490000",
+      "product_category": "laptops",
+      "product_brand": "asus-tuf",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F971203818777.3053.webp?alt=media&token=c6b768ea-d98f-4319-be19-acb2a6493587"
+    },
+    {
+      "id": 882963437470.4962,
+      "product_name": "Laptop ASUS TUF Gaming FX706HC-HX579W",
+      "product_price": "19590000",
+      "product_category": "laptops",
+      "product_brand": "asus-tuf",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1278348154055.328.webp?alt=media&token=bf36cfe7-c341-440e-a104-8e6a2c79411a"
+    },
+    {
+      "id": 1121118699048.2476,
+      "product_name": "Laptop ASUS TUF Gaming FA506ICB-HN355W",
+      "product_price": "15990000",
+      "product_category": "laptops",
+      "product_brand": "asus-tuf",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F728943842862.4244.webp?alt=media&token=7c3d5700-34f0-44c8-a807-fb98dc83e509"
+    },
+    {
+      "id": 897618994314.9769,
+      "product_name": "Laptop ASUS Gaming ROG Strix G513IE-HN246W",
+      "product_price": "20490000",
+      "product_category": "laptops",
+      "product_brand": "asus-rog",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1059400626963.1421.webp?alt=media&token=794cd23b-d7f0-4baf-8f5f-c868dbc0ce67"
+    },
+    {
+      "id": 1443459432251.4788,
+      "product_name": "Laptop ASUS ROG Zephyrus G16 GU603VU-N3898W",
+      "product_price": "41590000",
+      "product_category": "laptops",
+      "product_brand": "asus-rog",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F607694721221.7119.webp?alt=media&token=09c96896-cd62-4b32-9144-e99b3007414b"
+    },
+    {
+      "id": 1344380969312.3013,
+      "product_name": "Laptop ASUS ROG Zephyrus G14 GA401QC-K2199W",
+      "product_price": "24690000",
+      "product_category": "laptops",
+      "product_brand": "asus-rog",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F69952813701.00496.webp?alt=media&token=5e3c5ed3-dee3-4e5f-a643-e9297a15c04e"
+    },
+    {
+      "id": 745633595301.8982,
+      "product_name": "Laptop ASUS ROG Zephyrus Duo 16 GX650RW-LO999W",
+      "product_price": "91590000",
+      "product_category": "laptops",
+      "product_brand": "asus-rog",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1580567623715.0156.webp?alt=media&token=c4b8fdfe-1114-4558-ad15-ff83c54545e7"
+    },
+    {
+      "id": 922922434661.2352,
+      "product_name": "Laptop Dell Alienware M15 R6 (P109F001CBL)",
+      "product_price": "44590000",
+      "product_category": "laptops",
+      "product_brand": "alienware",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F304214267785.06824.webp?alt=media&token=2b2ba9c0-6cf9-47fc-b28c-e259cfc4e174"
+    },
+    {
+      "id": 930507745325.2759,
+      "product_name": "PC Dell Alienware Aurora R13 70297322",
+      "product_price": "95490000",
+      "product_category": "desktops",
+      "product_brand": "alienware",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1135859102840.7334.webp?alt=media&token=3367e42f-cac9-4981-bebb-facd505df1c3"
+    },
+    {
+      "id": 350879151040.60254,
+      "product_name": "Monitor LCD Dell 24.5\" AW2521H (1920 x 1080/Fast IPS/360Hz/3 ms/G-Sync)",
+      "product_price": "20490000",
+      "product_category": "monitors",
+      "product_brand": "alienware",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1677274767314.1655.webp?alt=media&token=a802c6c0-e818-4238-853c-25f559dbddaa"
+    },
+    {
+      "id": 831632567832.2446,
+      "product_name": "Monitor LCD Dell 27\" AW2721D (2560 x 1440/IPS/240Hz/3 ms/G-Sync)",
+      "product_price": "24990000",
+      "product_category": "monitors",
+      "product_brand": "alienware",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F421150329475.04236.webp?alt=media&token=d327e24d-cad8-4215-a0cb-208aeba54d49"
+    },
+    {
+      "id": 1131252253545.1091,
+      "product_name": "PC Case Gigabyte AORUS AC300 GLASS",
+      "product_price": "2190000",
+      "product_category": "accessories",
+      "product_brand": "gigabyte-AORUS",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1005374586107.7141.webp?alt=media&token=57cbf0a3-ae1f-4538-bbbe-b097a45f1ed1"
+    },
+    {
+      "id": 746936762963.8536,
+      "product_name": "RAM Gigabyte AORUS RGB 16GB (2x8GB) DDR4 3600 (2x Demo kit)",
+      "product_price": "3549000",
+      "product_category": "accessories",
+      "product_brand": "gigabyte-AORUS",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F417967747784.42554.webp?alt=media&token=51d6b043-301e-47b9-b3f7-4f43a6e38dcb"
+    },
+    {
+      "id": 85564147361.41605,
+      "product_name": "game Gigabyte Aorus Gaming chair AGC300",
+      "product_price": "6990000",
+      "product_category": "accessories",
+      "product_brand": "gigabyte-AORUS",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F84781975148.5932.webp?alt=media&token=8e0ac28d-60fd-4166-9de9-e22402668b14"
+    },
+    {
+      "id": 457768000310.7142,
+      "product_name": "CPU Fan Gigabyte Aorus ATC800",
+      "product_price": "2249000",
+      "product_category": "accessories",
+      "product_brand": "gigabyte-AORUS",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F283237818408.6565.webp?alt=media&token=bbf50d74-8c0e-45cf-86ca-5512d715a6fe"
+    },
+    {
+      "id": 1440149483658.494,
+      "product_name": "Gigabyte Aorus M5 Gaming Mouse",
+      "product_price": "900000",
+      "product_category": "accessories",
+      "product_brand": "gigabyte-AORUS",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1147199042896.8333.webp?alt=media&token=c766b109-ba1b-45e6-b961-dd404e2129b5"
+    },
+    {
+      "id": 1073165749245.1173,
+      "product_name": "Gigabyte AORUS K9 Keyboard",
+      "product_price": "1730000",
+      "product_category": "accessories",
+      "product_brand": "gigabyte-AORUS",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F236829362664.1597.webp?alt=media&token=47e04423-bf16-44a8-970b-bafe4ae5a68f"
+    },
+    {
+      "id": 1101928175931.2734,
+      "product_name": "Case Gigabyte Aorus C700 Glass Full Tower (GB-AC700G)",
+      "product_price": "9199000",
+      "product_category": "desktops",
+      "product_brand": "gigabyte-AORUS",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F983091526311.7906.webp?alt=media&token=96f7645e-96c1-407f-8e20-807ae306372b"
+    },
+    {
+      "id": 1645183845202.1804,
+      "product_name": "Monitor LCD Gigabyte Aorus AD27QD-EK",
+      "product_price": "11560000",
+      "product_category": "monitors",
+      "product_brand": "gigabyte-AORUS",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F792289826552.1992.webp?alt=media&token=fb4c7661-ad94-4a0f-a5f5-ece6afa9b037"
+    },
+    {
+      "id": 326001667889.04126,
+      "product_name": "Projector Epson EB-E01",
+      "product_price": "11890000",
+      "product_category": "projectors",
+      "product_brand": "OTHER",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F452038003333.54.webp?alt=media&token=58d4b186-b952-4d66-b12d-7645684703e8"
+    },
+    {
+      "id": 1476131356275.553,
+      "product_name": "Projector Panasonic PT-LB386",
+      "product_price": "15190000",
+      "product_category": "projectors",
+      "product_brand": "OTHER",
+      "product_status": "true",
+      "product_inventory": "99",
+      "quantity": 1,
+      "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1057240645586.1322.webp?alt=media&token=f71270ca-90e4-45d0-8b09-b42d887b06d0"
     }
   ]
 }

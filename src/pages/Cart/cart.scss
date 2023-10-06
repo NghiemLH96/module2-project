@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Oswald:wght@600&family=Ultra&display=swap');
+$titleFont:'Black Ops One', cursive;
+
+.cart_container{
+    color: #FFFFFF;
+    &>h1{
+        text-align: center;
+        padding: 20px;
+        font-size: 40px;
+        font-family: $titleFont;
+    }
+    &>table{
+        min-width: 1200px;
+        background-color: #FFFFFF;
+        color: black;
+        text-align: center;
+        border-collapse: collapse;
+        &>thead{
+            background-color: rgb(125, 107, 107);
+            height: 30px;
+        }
+        &>tbody{
+            height: 200px;
+            &>tr>td{
+                &>img{
+                    width: 100px;
+                    height: 100px;
+                }
+                &>button{
+                    width: 70px;
+                    height: 25px;
+                    margin: 5px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    color: #FFFFFF;
+                }
+                .check-out{
+                    background-color: rgb(80, 80, 152);
+                    &:hover{
+                        color: red;
+                    }
+                }
+                .remove{
+                    background-color: rgb(219, 105, 105);
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+        }
+        &>tfoot{
+            height: 50px;
+            background-color:rgb(125, 107, 107);
+            &>tr>td>button{
+                padding: 5px;
+                border-radius: 5px;
+                border: none;
+                margin: 10px;
+                cursor: pointer;
+            }
+            &>tr>td>.checkOutAll{
+                background-color: rgb(246, 215, 160);
+                &:hover{
+                    color: red;
+                }
+            }
+            &>tr>td>.removeAll{
+                background-color: rgb(255, 80, 80);
+                color: #FFFFFF;
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+}

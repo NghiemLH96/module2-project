@@ -1,19 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
-import { userAction } from '../../store/slices/userList.reducer'
 import './home.scss'
-import crypto from '../../service/crypto'
-
 
 export default function HomePage() {
-  const dispatch = useDispatch();
-  useEffect(()=>{
-    if (localStorage.getItem("token")) {
-      dispatch(userAction.setUser(crypto.verifyToken(localStorage.getItem("token"),import.meta.env.VITE_PRIVATE_KEY)))
-    }
-  },[])
   const navigate = useNavigate();
+  
 
   return (
     <div className='homepage-container'>
@@ -28,23 +19,23 @@ export default function HomePage() {
       <div className='categories-byDevice'>
         <h2 className='categories-title'>Browse Popular Categories</h2>
         <div className='categories'>
-          <div onClick={()=>{navigate("/laptops")}} className='categorie'>
+          <div onClick={()=>{navigate("/all-products/laptops")}} className='categorie'>
             <img src="https://images.acer.com/is/image/acer/Predator-helios-300-spatiallabs-edition-homepage-1?$responsive$" alt="" />
             <span className='categorie-text' >Laptops</span>
           </div>
-          <div  onClick={()=>{navigate("/desktops")}} className='categorie'>
+          <div  onClick={()=>{navigate("/all-products/desktops")}} className='categorie'>
             <img src="https://images.acer.com/is/image/acer/Predator-Orion-7000-Homepage-Photo?$responsive$" alt="" />
             <span className='categorie-text'>Desktops</span>
           </div>
-          <div onClick={()=>{navigate("/monitors")}} className='categorie'>
+          <div onClick={()=>{navigate("/all-products/monitors")}} className='categorie'>
             <img src="https://images.acer.com/is/image/acer/XB3%20series?$responsive$" alt="" />
             <span className='categorie-text'>Monitors</span>
           </div>
-          <div onClick={()=>{navigate("/projectors")}} className='categorie'>
+          <div onClick={()=>{navigate("/all-products/projectors")}} className='categorie'>
             <img src="https://images.acer.com/is/image/acer/Predator_GD711-1?$responsive$" alt="" />
             <span className='categorie-text'>Projectors</span>
           </div>
-          <div onClick={()=>{navigate("/accessories")}} className='categorie'>
+          <div onClick={()=>{navigate("/all-products/accessories")}} className='categorie'>
             <img src="https://images.acer.com/is/image/acer/product-Predator-Galea_350-3?$responsive$" alt="" />
             <span className='categorie-text'>Accessories</span>
           </div>
@@ -53,23 +44,23 @@ export default function HomePage() {
       <div className='categories-byBrand'>
         <h2 className='categories-title'>Select your brand</h2>
         <div className='categories'>
-          <div onClick={()=>{navigate("/predator")}} className='categorie'>
+          <div onClick={()=>{navigate("/all-products/predator")}} className='categorie'>
             <img src="https://static.wixstatic.com/media/673167_0c3ee37cc1c44e6ca11f8e8c2c227c7b~mv2.gif/v1/fill/w_500,h_600,al_c/673167_0c3ee37cc1c44e6ca11f8e8c2c227c7b~mv2.gif" alt="" />
             <span className='categorie-text'>PREDATOR</span>
           </div>
-          <div onClick={()=>{navigate("/asus-tuf")}} className='categorie'>
+          <div onClick={()=>{navigate("/all-products/asus-tuf")}} className='categorie'>
             <img src="https://images.pling.com/img/00/00/59/49/20/1452509/d8b43a82841eb4f0d60b9551de22605db9e18331f285dd1850c1917b03af26969a45.png" alt="" />
             <span className='categorie-text'>ASUS TUF</span>
           </div>
-          <div onClick={()=>{navigate("/asus-rog")}} className='categorie'>
+          <div onClick={()=>{navigate("/all-products/asus-rog")}} className='categorie'>
             <img src="https://www.pngmart.com/files/22/Republic-Of-Gamers-Logo-Transparent-PNG.png" alt="" />
             <span className='categorie-text'>ASUS ROG</span>
           </div>
-          <div onClick={()=>{navigate("/alienware")}} className='categorie'>
+          <div onClick={()=>{navigate("/all-products/alienware")}} className='categorie'>
             <img src="https://www.canitcash.com/wp-content/uploads/2020/12/Sell-Alienware-2.png" alt="" />
             <span className='categorie-text'>ALIENWARE</span>
           </div>
-          <div onClick={()=>{navigate("/gigabyte-AORUS")}} className='categorie'>
+          <div onClick={()=>{navigate("/all-products/gigabyte-AORUS")}} className='categorie'>
             <img src="https://www.gigabyte.com/FileUpload/Global/GMicroSite/93/Activity/436/images/mb_aoruslogo.png" alt="" />
             <span className='categorie-text'>GIGABYTE AORUS</span>
           </div>

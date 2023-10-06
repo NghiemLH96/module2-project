@@ -3,6 +3,7 @@ import { uploadFileToStorage } from '../../../../../firebase';
 import { api } from '../../../../service'
 import { useDispatch } from 'react-redux';
 import { productAction } from '../../../../store/slices/productList.reducer';
+import Modal from 'antd/es/modal/Modal';
 
 export default function AddProductForm({setAddProductForm}) {
     const dispatch = useDispatch()
@@ -12,6 +13,19 @@ export default function AddProductForm({setAddProductForm}) {
     const [addProductBrand,setAddProductBrand] = useState("");
     const [addProductStatus,setAddProductStatus] = useState(false);
     const [addProductInventory,setAddProductInventory] = useState(0);
+
+    const addProductSuccess = () => {
+        Modal.success({
+          content: 'Product was added!',
+          onOk(){
+            api.productsApi.findAllProducts()
+            .then(res=>{
+                dispatch(productAction.setProducts(res.data))
+            })
+            setAddProductForm(false)
+          }
+        });
+      };
 
     async function handleAddProduct(e){
         e.preventDefault();
@@ -24,17 +38,14 @@ export default function AddProductForm({setAddProductForm}) {
             product_brand:addProductBrand,
             product_status:addProductStatus,
             product_inventory:addProductInventory,
+            quantity:1,
             product_image: await uploadFileToStorage(e.target.querySelector("#addProduct_avatar").files[0],"products_img"),
         };
         console.log(newProduct);
         if (newProduct) {
             await api.productsApi.addProducts(newProduct)
-            api.productsApi.findAllProducts()
-            .then(res=>{
-                dispatch(productAction.setProducts(res.data))
-            })
+            addProductSuccess() 
         }
-        setAddProductForm(false)
     }
 
   return (
@@ -54,11 +65,11 @@ export default function AddProductForm({setAddProductForm}) {
                     <label htmlFor="product_category">Category:</label>
                     <select defaultValue="None" onChange={(e)=>{setAddProductCategory(e.target.value)}} id="product_category" name="">
                         <option disabled value="None">--Select Category--</option>
-                        <option value="Desktop">Desktop</option>
-                        <option value="Laptop">Laptop</option>
-                        <option value="Projector">Projector</option>
-                        <option value="Accessories">Accessories</option>
-                        <option value="Monitor">Monitor</option>
+                        <option value="desktops">Desktop</option>
+                        <option value="laptops">Laptop</option>
+                        <option value="projectors">Projector</option>
+                        <option value="accessories">Accessories</option>
+                        <option value="monitors">Monitor</option>
                         <option value="Other">Other</option>
                     </select>
                 </div>
@@ -66,11 +77,11 @@ export default function AddProductForm({setAddProductForm}) {
                     <label htmlFor="product_brand">Brand:</label>
                     <select defaultValue="None" onChange={(e)=>{setAddProductBrand(e.target.value)}}  name="product_brand" id="">
                         <option disabled value="None">--Select Brand--</option>
-                        <option value="Predator">Predator</option>
-                        <option value="ASUS TUF">ASUS TUF</option>
-                        <option value="ASUS ROG">ASUS ROG</option>
-                        <option value="ALIENWARE">ALIENWARE</option>
-                        <option value="GIGABYTE AORUS">GIGABYTE AORUS</option>
+                        <option value="predator">Predator</option>
+                        <option value="asus-tuf">ASUS TUF</option>
+                        <option value="asus-rog">ASUS ROG</option>
+                        <option value="alienware">ALIENWARE</option>
+                        <option value="gigabyte-AORUS">GIGABYTE AORUS</option>
                         <option value="OTHER">OTHER</option>
                     </select>
                 </div>

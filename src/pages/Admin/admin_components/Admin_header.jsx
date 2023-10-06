@@ -4,19 +4,34 @@ import crypto from '../../../service/crypto'
 import { useNavigate } from 'react-router-dom'
 import { ExclamationCircleOutlined } from '@ant-design/icons';
 import { Button, Modal } from 'antd';
-import { useDispatch } from 'react-redux';
+import { useDispatch , useSelector } from 'react-redux';
 import { userAction } from '../../../store/slices/userList.reducer';
+import { store } from '../../../store';
+import { api } from '../../../service';
+import { loginUserAction } from '../../../store/slices/loginUserDetail.reducer';
 
 export default function Admin_header() {
-    const dispatch = useDispatch()
-    const navigate = useNavigate()
-    useEffect(()=>{
-      if (!crypto.verifyToken(localStorage.getItem("token"),import.meta.env.VITE_PRIVATE_KEY).admin) {
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+
+
+   useEffect(()=>{
+    api.usersApi.findUserById(crypto.verifyToken(localStorage.getItem("token"),import.meta.env.VITE_PRIVATE_KEY))
+    .then(res=>{
+      if (!res.data.admin) {
         navigate("/")
-      }else{
-        dispatch(userAction.setUser(crypto.verifyToken(localStorage.getItem("token"),import.meta.env.VITE_PRIVATE_KEY)))
       }
-    },[])
+      dispatch(loginUserAction.setLoginUser(res.data))
+    })
+
+    api.usersApi.findAllUser()
+    .then(res=>{
+      dispatch(userAction.setUser(res.data))
+    })
+   },[])
+
+    const loginUser = useSelector(store => store.loginUserStore)
+
 
     const { confirm } = Modal;
     const destroyAll = () => {
@@ -28,7 +43,7 @@ export default function Admin_header() {
           content: <Button onClick={destroyAll()}>Are you sure to quit?</Button>,
           onOk() {
             localStorage.removeItem("token")
-            dispatch(userAction.removeUser())
+            dispatch(loginUserAction.removeLoginUser())
             navigate("/")
           },
           onCancel() {
@@ -51,8 +66,8 @@ export default function Admin_header() {
             </ul>
             <div className='user-box'>      
                 <span onClick={()=>{showConfirm()}} className='userBox-btn'>Logout</span>
-                <img className='userAvatar' src="" alt="" />
-                <span className='hello-word'>Hi,</span>
+                <img className='userAvatar' src={loginUser.user && loginUser.user.avatar} alt="" />
+                <span className='hello-word'>Hi,{loginUser.user && loginUser.user.firstname}</span>
             </div>
         </div>
     </header>

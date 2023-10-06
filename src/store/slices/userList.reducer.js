@@ -15,7 +15,7 @@ const usersSlice = createSlice({
                 ...state,
                 user:null
             }
-        }
+        },
     }
 })
 

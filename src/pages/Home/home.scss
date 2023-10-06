@@ -7,6 +7,7 @@ $titleFont:'Black Ops One', cursive;
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color: #282a31;
     .categories-title{
         font-family: $titleFont;
         font-size: 40px;
@@ -59,14 +60,14 @@ $titleFont:'Black Ops One', cursive;
         .banner-video{
             display: inline-block;
             width: 100vw;
-            height: 450px;
+            height: 300px;
             object-fit: cover;
         }
         .banner-title{
             position: absolute;
             width: 450px;
-            top: 150px;
-            left: 150px;
+            top: 15%;
+            left: 10%;
             color: #FFFFFF;
             font-family: $titleFont;
             line-height: 50px;
@@ -81,6 +82,7 @@ $titleFont:'Black Ops One', cursive;
             background-color: #00AECD;
             font-family: $titleFont;
             color: #000000;
+            cursor: pointer;
             &:hover{
                 color: #FFFFFF;
                 background-color: #000000;
