@@ -7,12 +7,14 @@ import { productAction } from '../../../../store/slices/productList.reducer';
 import EditProductForm from './EditProductForm';
 import { ExclamationCircleOutlined } from '@ant-design/icons';
 import { Button, Modal } from 'antd';
+import {Pagination} from 'antd';
 
 export default function Products_manager() {
     const dispatch = useDispatch()
     const [addProductForm, setAddProductForm] = useState(false)
     const [editProductForm , setEditProductForm] = useState(false)
     const [editingProduct , setEditingProduct] =useState({})
+    const [renderProductList,setRenderProductList] = useState([])
 
     const { confirm } = Modal;
     const destroyAll = () => {
@@ -33,14 +35,37 @@ export default function Products_manager() {
     ;
     };
 
+    
+    const productList = useSelector( store => store.productsStore).data
     useEffect(()=>{
         api.productsApi.findAllProducts()
         .then(res =>{
             dispatch(productAction.setProducts(res.data))
+            setRenderProductList(res.data)
         })
-    },[])
-    const productList = useSelector( store => store.productsStore).data
- 
+        if (productList) { 
+            handlePagination(currentPage)
+          }
+    },[productList])
+
+    //pagination
+    const [currentPage,setCurrentPage] = useState(1)
+    const pageSize = 10
+    function handlePagination(page){
+            const min = (page - 1)*pageSize
+            const max = page * pageSize
+            const pageRender = []
+            for (let i = 0; i < productList.length; i++) {
+            if (i>=min && i<max) {
+                pageRender.push(productList[i])
+            } 
+            }
+            if (pageRender[0]) {
+            setRenderProductList(pageRender)
+            setCurrentPage(page)
+            }
+    }
+
   return (
     <div className='page_container'>
         <h1 className='page_title'>Product Managerment</h1>
@@ -62,9 +87,9 @@ export default function Products_manager() {
                 </tr>
             </thead>
             <tbody>
-                {productList.map((item,index) => (
+                {renderProductList.map((item,index) => (
                     <tr key={item.id}>
-                        <td>{index+1}</td>
+                        <td>{index+1+(currentPage*pageSize-pageSize)}</td>
                         <td>{item.product_name}</td>
                         <td><img src={item.product_image} alt="" /></td>
                         <td>{item.product_category}</td>
@@ -81,6 +106,11 @@ export default function Products_manager() {
             </tbody>
             <tfoot></tfoot>
         </table>
+        <div className='pagination'>
+            <Pagination  defaultCurrent={1} current={currentPage} total={productList.length} pageSize={pageSize} onChange={(page)=>{
+            handlePagination(page)}}/>
+        </div>
+
     </div>
   )
 }

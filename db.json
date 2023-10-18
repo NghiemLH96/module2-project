@@ -3,12 +3,12 @@
     {
       "id": 325319706268.8367,
       "username": "admin199696",
-      "firstname": "Nghiem",
+      "firstname": "Nghiem1",
       "lastname": "Le",
       "email": "isaac01022014@gmail.com",
-      "passwords": "U2FsdGVkX1/92t2wyoGh+BoY6kUlJVzNrV3s0A95PnA=",
+      "passwords": "U2FsdGVkX18+BfRGoGkus2KXqdrV8SugNmXpYC5VtAY=",
       "birthday": "1996-06-14",
-      "avatar": "https://firebasestorage.googleapis.com/v0/b/module2-project-53e34.appspot.com/o/users-avatar%2FIL.jpg?alt=media&token=4d9c2a5f-e1f2-495c-8c22-415a993c75ba&_gl=1*yp9xgz*_ga*NDg1NTQxNjU1LjE2OTU4MTYxMTc.*_ga_CW55HF8NVT*MTY5NjIwNzk0OS42LjEuMTY5NjIwODE1OS4zMS4wLjA.",
+      "avatar": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/user-avatar%2F1147624452988.4326.jpeg?alt=media&token=35ab3bcf-51cb-46f9-af71-38ccf8ce127f",
       "admin": true,
       "active": true,
       "receipt": [
@@ -292,6 +292,45 @@
               "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F983091526311.7906.webp?alt=media&token=96f7645e-96c1-407f-8e20-807ae306372b"
             }
           ]
+        },
+        {
+          "receiptId": 1174026723838.0422,
+          "buyerName": "admin199696",
+          "product": [
+            {
+              "id": 31170217122.41812,
+              "product_name": "Laptop ACER Predator Helios 16",
+              "product_price": "117790000",
+              "product_category": "laptops",
+              "product_brand": "predator",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 4,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F1304313218152.6404.webp?alt=media&token=8cbac273-5139-4589-90c6-85c7f4eadae4"
+            },
+            {
+              "id": 861781433221.2014,
+              "product_name": "Laptop ACER Predator Helios Neo",
+              "product_price": "37990000",
+              "product_category": "laptops",
+              "product_brand": "predator",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 2,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F873340475550.3306.webp?alt=media&token=0ec9904c-77c2-45b3-ab6a-ca0c816792c9"
+            },
+            {
+              "id": 848338100463.1366,
+              "product_name": "Laptop ACER Predator Triton 300",
+              "product_price": "36990000",
+              "product_category": "laptops",
+              "product_brand": "predator",
+              "product_status": "true",
+              "product_inventory": "99",
+              "quantity": 2,
+              "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F469384470461.7157.webp?alt=media&token=79ed1f1c-7011-43ea-8986-641124ffe6ef"
+            }
+          ]
         }
       ],
       "cart": []
@@ -302,12 +341,35 @@
       "firstname": "Nam",
       "lastname": "Hoang",
       "email": "hoangnam@gmail.com",
-      "passwords": "U2FsdGVkX190hXu/MjhiRHJ0MByrNGzGVtuc/7yAlxg=",
+      "passwords": "U2FsdGVkX18mMReOOuJonxNDQA45n6iMxwqn1r6nyRk=",
       "birthday": "2000-02-01",
       "active": true,
       "admin": false,
-      "avatar": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/user-avatar%2F1459446862221.4526.jpeg?alt=media&token=5c946821-235f-4d06-a6d6-d2b49022b392",
-      "cart": [],
+      "avatar": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/user-avatar%2F150834992902.09476.jpeg?alt=media&token=7f14c9b3-4668-434a-b481-544a34b6f181",
+      "cart": [
+        {
+          "id": 1540028932591.5654,
+          "product_name": "Laptop ASUS TUF Gaming FA507RM-HN018W",
+          "product_price": "31490000",
+          "product_category": "laptops",
+          "product_brand": "asus-tuf",
+          "product_status": "true",
+          "product_inventory": "99",
+          "quantity": 1,
+          "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F971203818777.3053.webp?alt=media&token=c6b768ea-d98f-4319-be19-acb2a6493587"
+        },
+        {
+          "id": 198411819516.3283,
+          "product_name": "Laptop ASUS TUF Gaming FX507ZC-HN124W",
+          "product_price": "24790000",
+          "product_category": "laptops",
+          "product_brand": "asus-tuf",
+          "product_status": "true",
+          "product_inventory": "99",
+          "quantity": 1,
+          "product_image": "https://firebasestorage.googleapis.com/v0/b/module2-productsimg.appspot.com/o/products_img%2F926555481010.718.webp?alt=media&token=30b62bbe-8530-4d57-b569-7bb8b7044b79"
+        }
+      ],
       "receipt": [
         {
           "receiptId": 954188662603.5901,
@@ -366,6 +428,20 @@
           ]
         }
       ]
+    },
+    {
+      "id": 890931102897.834,
+      "username": "Nghiem1996",
+      "firstname": "Nghiem",
+      "lastname": "Le",
+      "email": "erwe@gmail.com",
+      "passwords": "U2FsdGVkX19Wmw8lHZ4fG/PPsW1ZuaDKrnxHZGNAz3c=",
+      "birthday": "1996-06-14",
+      "admin": false,
+      "active": true,
+      "avatar": "https://firebasestorage.googleapis.com/v0/b/module2-project-53e34.appspot.com/o/users-avatar%2Fdownload.png?alt=media&token=5385b2fb-7590-4146-a764-4ff818ec75e2&_gl=1*x797hd*_ga*NDg1NTQxNjU1LjE2OTU4MTYxMTc.*_ga_CW55HF8NVT*MTY5NjQ4NTUyNS4xNS4xLjE2OTY0ODU1NjQuMjEuMC4w",
+      "cart": [],
+      "receipt": []
     }
   ],
   "products": [

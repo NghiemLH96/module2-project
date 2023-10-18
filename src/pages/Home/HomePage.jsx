@@ -13,7 +13,7 @@ export default function HomePage() {
         <div className='banner-title'>
             <p>PREDATOR BIFROST Intel<sup>®</sup> Arc™ A750 OC</p>
             <h1>SUPERCHARGED GAMING LIES WITHIN</h1>
-            <span onClick={()=>{navigate("/predator")}} className='banner-explore'>Explore</span>
+            <span onClick={()=>{navigate("/all-products/predator")}} className='banner-explore'>Explore</span>
         </div>
       </div>
       <div className='categories-byDevice'>

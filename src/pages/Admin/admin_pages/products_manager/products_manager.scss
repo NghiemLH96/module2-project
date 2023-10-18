@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Oswald:wght@600&family=Ultra&display=swap');
-$titleFont:'Black Ops One', cursive;
+$titleFont: 'Black Ops One', cursive;
 
-.page_container{
+.page_container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     padding: 50px;
     width: 100%;
     max-width: 1200px;
     row-gap: 10px;
-    .page_title{
+
+    .page_title {
         font-size: 40px;
         font-family: $titleFont;
     }
-    .addProduct_btn{
+
+    .addProduct_btn {
         width: 130px;
         height: 30px;
         font-family: $titleFont;
@@ -22,48 +24,59 @@ $titleFont:'Black Ops One', cursive;
         border: none;
         border-radius: 5px;
     }
-    &>table{
+
+    &>table {
         border-collapse: collapse;
         min-width: 1000px;
         width: 100%;
-        &>thead{
+
+        &>thead {
             height: 30px;
         }
-        &>tbody{
+
+        &>tbody {
             text-align: center;
             height: 100px;
-            tr:nth-child(even){
+
+            tr:nth-child(even) {
                 background-color: #fbedd3;
             }
-            &>tr>td{
+
+            &>tr>td {
                 width: 120px;
-                &>img{
+
+                &>img {
                     width: 150px;
                     height: 150px;
                     object-fit: cover;
                 }
-                &>button{
+
+                &>button {
                     margin: 0px 2px;
                     width: 50px;
                     height: 25px;
                     border: none;
                     border-radius: 5px;
                 }
-                .edit_btn{
+
+                .edit_btn {
                     background-color: grey;
                     color: #FFFFFF;
                     cursor: pointer;
                     transition: all 0.5s;
-                    &:hover{
+
+                    &:hover {
                         background-color: #5ea7df;
                     }
                 }
-                .delete_btn{
+
+                .delete_btn {
                     background-color: rgb(255, 101, 101);
                     color: #FFFFFF;
                     cursor: pointer;
                     transition: all 0.5s;
-                    &:hover{
+
+                    &:hover {
                         background-color: #5ea7df;
                     }
                 }
@@ -72,7 +85,7 @@ $titleFont:'Black Ops One', cursive;
     }
 }
 
-.addProduct_container{
+.addProduct_container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,8 +94,9 @@ $titleFont:'Black Ops One', cursive;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(105, 105, 105,.3);
-    .addProduct_frame{
+    background-color: rgb(105, 105, 105, .3);
+
+    .addProduct_frame {
         width: auto;
         height: auto;
         padding: 40px;
@@ -91,51 +105,80 @@ $titleFont:'Black Ops One', cursive;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        row-gap: 20px ;
+        row-gap: 20px;
         border-radius: 20px;
-        &>h2{
+
+        &>h2 {
             text-align: center;
             font-family: $titleFont;
             font-size: 28px;
         }
-        &>form{
+
+        &>form {
             display: flex;
             flex-direction: column;
             row-gap: 10px;
             font-size: 18px;
-            .addProduct_info{
-                &>label{
+
+            .addProduct_info {
+                &>label {
                     display: inline-block;
                     min-width: 150px;
                 }
-                &>input{
+
+                &>input {
                     min-width: 200px;
                     padding: 0px 5px;
                 }
-                
+
             }
-            .addProduct_btnBox{
+
+            .addProduct_btnBox {
                 display: flex;
                 justify-content: center;
                 column-gap: 10px;
-                &>button{
+
+                &>button {
                     width: 80px;
                     height: 30px;
                     border: none;
                     border-radius: 5px;
                     cursor: pointer;
                     font-family: $titleFont;
-                    &:hover{
+
+                    &:hover {
                         color: red;
                     }
                 }
-                .action_btn{
-                    background-color:rgb(105, 105, 255) ;
+
+                .action_btn {
+                    background-color: rgb(105, 105, 255);
                 }
-                .cancel_btn{
+
+                .cancel_btn {
                     background-color: rgb(255, 127, 127);
                 }
             }
-        } 
+        }
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.view-btn {
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    background-color: rgb(0, 162, 255);
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    &:hover {
+        color: orange;
     }
 }

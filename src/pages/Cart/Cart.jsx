@@ -6,7 +6,7 @@ import { ExclamationCircleOutlined } from '@ant-design/icons';
 import { Button, Modal } from 'antd';
 import { api } from '../../service';
 import { loginUserAction } from '../../store/slices/loginUserDetail.reducer';
-import { userAction, usersReducer } from '../../store/slices/userList.reducer';
+import { userAction } from '../../store/slices/userList.reducer';
 
 export default function Cart() {
     const dispatch = useDispatch()
@@ -130,6 +130,7 @@ export default function Cart() {
         });
     ;
     };
+
 
   return (
     <div className='cart_container'>

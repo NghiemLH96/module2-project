@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Oswald:wght@600&family=Ultra&display=swap');
+$titleFont:'Black Ops One', cursive;
+
+.viewOrder-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(105, 105, 105,.3);
+    .viewOrder-box{
+        width: 1200px;
+        min-height: 200px;
+        height: auto;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &>table{
+            border-collapse: collapse;
+            text-align: center;
+            &>tbody>tr>.number{
+                width: 50px;
+            }
+            &>tbody>tr>td{
+                padding: 10px;
+            }
+            &>tbody>tr>td>img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        &>h2{
+            font-size: 30px;
+            text-align: center;
+            font-family: $titleFont;
+            padding: 20px;
+        }
+    }
+    .close-btn{
+        width: 100px;
+        height: 30px;
+        margin: 10px;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        color: #FFFFFF;
+        cursor: pointer;
+        &:hover{
+            color: orange;
+        }
+    }
+}

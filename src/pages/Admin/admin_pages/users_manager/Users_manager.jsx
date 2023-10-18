@@ -11,6 +11,11 @@ import { userAction } from '../../../../store/slices/userList.reducer';
 export default function Users_manager() {
   const dispatch = useDispatch()
   const userList = useSelector( store => store.usersStore).user
+  let renderUserList;
+  if (userList) {
+    renderUserList = userList.filter(user=> user.id != crypto.verifyToken(localStorage.getItem("token"),import.meta.env.VITE_PRIVATE_KEY))
+  }
+  
 
   const resetPasswordSuccess = () => {
     Modal.success({
@@ -69,6 +74,7 @@ const resetPasswords = (userId) => {
           <tr>
             <th>#</th>
             <th style={{width:"200px"}}>User ID</th>
+            <th>User Avatar</th>
             <th>Username</th>
             <th>User full name</th>
             <th style={{width:"200px"}}>User Email</th>
@@ -77,10 +83,11 @@ const resetPasswords = (userId) => {
           </tr>
         </thead>
         <tbody>
-          {(userList != null) && userList.map((user,index) => (
+          {(renderUserList != null) && renderUserList.map((user,index) => (
             <tr key={user.id}>
               <td>{index+1}</td>
               <td>{user.id}</td>
+              <td><img style={{width:"100px",height:"100px"}} src={user.avatar} alt="" /></td>
               <td>{user.username}</td>
               <td>{user.firstname + user.lastname}</td>
               <td>{user.email}</td>
@@ -97,7 +104,7 @@ const resetPasswords = (userId) => {
         <tfoot>
           <tr>
             <td colSpan={6}>Total Member</td>
-            <td>{(userList != null ) && userList.length}</td>
+            <td>{(renderUserList != null ) && renderUserList.length}</td>
           </tr>
         </tfoot>
       </table>

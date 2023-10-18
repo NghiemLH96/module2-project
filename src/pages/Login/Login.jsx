@@ -20,6 +20,13 @@ export default function Login() {
     });
   };
 
+  const error = () => {
+    Modal.error({
+      title: 'Login faild!',
+      content: 'Account was freezed! Kindly contact customer service for more detail.',
+    });
+  };
+
   //Verify Login Status
   if (localStorage.getItem("token")) {
     api.usersApi.findByUsername(crypto.verifyToken(localStorage.getItem("token"), import.meta.env.VITE_PRIVATE_KEY).username)
@@ -56,7 +63,7 @@ export default function Login() {
           }
 
         } else {
-          e.target.parentNode.querySelector(".usr-freezed").style.display = "block"
+          error()
         }
       } else {
         e.target.parentNode.querySelector(".usr-not_existed").style.display = "block"

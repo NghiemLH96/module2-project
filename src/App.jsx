@@ -1,4 +1,4 @@
-import { Routes , Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import HomePage from "./pages/Home/HomePage"
 import Home from "./pages/Home/Home"
 import Contact from "./pages/Contact"
@@ -18,24 +18,24 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home/>}>
-          <Route path='/' element={<HomePage/>}></Route>
-          <Route path='/contact' element={<Contact/>}></Route>
-          <Route path='/about' element={<About/>}></Route>
-          <Route path='/cart' element={<Cart/>}></Route>
-          <Route path='/all-products' element={<Allproduct/>}>
-            <Route path=':category' element={<AllProducts/>}></Route>
-            <Route path='' element={<AllProducts/>}></Route>
+        <Route path="/" element={<Home />}>
+          <Route path='/' element={<HomePage />}></Route>
+          <Route path='/contact' element={<Contact />}></Route>
+          <Route path='/about' element={<About />}></Route>
+          <Route path='/cart' element={<Cart />}></Route>
+          <Route path='/all-products' element={<Allproduct />}>
+            <Route path=':category' element={<AllProducts />}></Route>
+            <Route path='' element={<AllProducts />}></Route>
           </Route>
         </Route>
-          <Route path='/register' element={<Register/>}></Route>
-          <Route path='/login' element={<Login/>}></Route>
-          <Route path='/admin' element={<Admin/>}>
-            <Route path="products-manager" element={<Products_manager/>}></Route>
-            <Route path="users-manager" element={<Users_manager/>}></Route>
-            <Route path="orders-manager" element={<Orders_manager/>}></Route>
-            <Route path="" element={<Admin_info/>}></Route>
-          </Route>
+        <Route path='/register' element={<Register />}></Route>
+        <Route path='/login' element={<Login />}></Route>
+        <Route path='/admin' element={<Admin />}>
+          <Route path="products-manager" element={<Products_manager />}></Route>
+          <Route path="users-manager" element={<Users_manager />}></Route>
+          <Route path="orders-manager" element={<Orders_manager />}></Route>
+          <Route path="" element={<Admin_info />}></Route>
+        </Route>
       </Routes>
     </>
   )

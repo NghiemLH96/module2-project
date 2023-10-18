@@ -17,6 +17,9 @@ header{
     height: 100px;
     background-color: #161C30;
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
     .header-container{
         display: flex;
         justify-content: center;
@@ -30,6 +33,7 @@ header{
         overflow: hidden;
         object-fit: cover;
         margin: 0px 30px;
+        cursor: pointer;
     }
     .navbar{
         list-style-type: none;
@@ -83,6 +87,7 @@ header{
             .cart_icon{
                 color: #FFFFFF;
                 font-size: 30px;
+                cursor: pointer;
             }
             .cart_quantity{
                 position: absolute;
@@ -106,7 +111,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #161C30;
+    background-color: #FFFFFF;
     .body-container{
         width: 100%;
         max-width: $maxWidth;

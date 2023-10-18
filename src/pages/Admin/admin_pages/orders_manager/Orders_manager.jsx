@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { store } from '../../../../store'
 import { api } from '../../../../service'
 import { userAction } from '../../../../store/slices/userList.reducer'
+import ViewOrder from './ViewOrder'
 
 export default function Orders_manager() {
   const dispatch = useDispatch()
@@ -11,7 +12,6 @@ export default function Orders_manager() {
   const [receipts , setReceipts] = useState([]);
   const [products , setProducts] = useState([])
   const usersStore = useSelector(store => store.usersStore).user || []
-
 
 
   useEffect(()=>{
@@ -29,10 +29,16 @@ export default function Orders_manager() {
     setProducts(receipts.map(receipt=>{
       return receipt.product
     }).flat())
-  },[usersStore])  
+  },[usersStore]) 
+
+  const [viewOrder,setViewOrder] = useState({})
+  function handleView(receipt){
+    setViewOrder(receipt)
+  }
 
   return (
     <div className='page_container'>
+      {viewOrderDetail && <ViewOrder setViewOrderDetail={setViewOrderDetail} viewOrder={viewOrder}/>}
       <h1 className='page_title'>Orders Managerment</h1>
       <table border={"1px solid"}>
         <thead>
@@ -54,7 +60,7 @@ export default function Orders_manager() {
               <td>{receipt.product.reduce((cur,val)=>{return cur += val.quantity},0)}</td>
               <td>{receipt.product.reduce((cur,val)=>{return cur += Number(val.product_price)},0)}</td>
               <td>
-                <button>View</button>
+                <button className='view-btn' onClick={()=>{setViewOrderDetail(true); handleView(receipt)}}>View</button>
               </td>
             </tr>
           ))}

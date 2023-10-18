@@ -18,6 +18,13 @@ export default function EditProfileForm({loginUserDetail,setEditProfile}) {
         });
       };
 
+      const error = () => {
+        Modal.error({
+          title: 'Edit profile faild!',
+          content: 'Passwords incorrect!',
+        });
+      };
+
     async function handleEditProfile(e){
         e.preventDefault();
         const editUser={
@@ -36,7 +43,7 @@ export default function EditProfileForm({loginUserDetail,setEditProfile}) {
             editProfileSuccess()
         })
         }else{
-            alert("passwords incorrect!")
+            error()
         }
         
         setEditProfile(false)
